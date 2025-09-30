@@ -54,7 +54,9 @@ class Ball:
         self.image.draw(self.x, self.y)
 
     def update(self):
-        self.y -= self.speed
+        if self.y - self.image.h > 33:
+            self.y -= self.speed
+        else : self.y = 33 + self.image.h
 
 def handle_events():
     global running
