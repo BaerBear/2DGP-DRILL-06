@@ -46,7 +46,9 @@ class Zombie:
 
 class Ball:
     def __init__(self):
-        pass
+        self.x, self.y = r.randint(50, 750), 599
+        self.speed = r.randint(3, 10)
+        self.image = load_image('ball21x21.png') if (r.randint(1,100)) % 2 == 0 else load_image('ball41x41.png')
 
     def draw(self):
         pass
