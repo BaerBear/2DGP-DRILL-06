@@ -45,7 +45,14 @@ class Zombie:
                              self.x, self.y, frame_width // 2, frame_height // 2)
 
 class Ball:
-    pass
+    def __init__(self):
+        pass
+
+    def draw(self):
+        pass
+
+    def update(self):
+        pass
 
 def handle_events():
     global running
